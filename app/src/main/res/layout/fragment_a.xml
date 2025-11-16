@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentA">
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="FragmentA"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/buttonFragmentAA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:text="FragmentAA"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tittle"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonFragmentAA"
+        android:id="@+id/containerFragmentA"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
